@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.GameHasEndedException;
 import exceptions.InvalidMoveException;
@@ -7,10 +7,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import tasks.ConnectFourEngine;
 
-public class ConnectFourEngineGPT3Tests {
+public class ConnectFourEngineGPTTests {
 
     public ConnectFourEngine getBaseEngine() {
-        return new ConnectFourEngineGPT3();
+        return new ConnectFourEngineGPT();
     }
 
     @Test

@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.NoMatchingCoinsException;
 import exceptions.ParameterOutOfAllowedBoundsException;
@@ -8,7 +8,7 @@ import tasks.CashRegister;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CashRegisterGPT3 implements CashRegister {
+public class CashRegisterGPT implements CashRegister {
 
     public static class CoinImpl implements Coin {
         private int value;
@@ -30,7 +30,7 @@ public class CashRegisterGPT3 implements CashRegister {
 
     private List<Coin> coins;
 
-    public CashRegisterGPT3() {
+    public CashRegisterGPT() {
         this.coins = new ArrayList<>();
     }
 

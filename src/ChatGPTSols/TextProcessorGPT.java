@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import tasks.TextProcessor;
 
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TextProcessorGPT3 implements TextProcessor {
+public class TextProcessorGPT implements TextProcessor {
 
     @Override
     public String readFile(String path) throws IOException {

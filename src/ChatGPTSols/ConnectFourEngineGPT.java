@@ -1,11 +1,11 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.GameHasEndedException;
 import exceptions.InvalidMoveException;
 import exceptions.TurnOrderViolationException;
 import tasks.ConnectFourEngine;
 
-public class ConnectFourEngineGPT3 implements ConnectFourEngine {
+public class ConnectFourEngineGPT implements ConnectFourEngine {
     private int[][] board; // Represents the game board
     private boolean gameOver; // Indicates if the game is over
     private int winner; // Stores the winner of the game

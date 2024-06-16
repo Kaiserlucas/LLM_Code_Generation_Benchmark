@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.InsufficientMoneyException;
 import exceptions.OutOfStockException;
@@ -15,16 +15,16 @@ public class VendingMachineGPT3Tests {
     //Helper functions that access the concrete implementation
 
     private VendingMachine getBaseVendingMachine() {
-        VendingMachine machine = new VendingMachineGPT3();
+        VendingMachine machine = new VendingMachineGPT();
         machine.addProducts(getBaseProducts());
         return machine;
     }
 
     private List<VendingMachine.Product> getBaseProducts() {
         List<VendingMachine.Product> baseProducts = new LinkedList();
-        VendingMachine.Product product1 = new VendingMachineGPT3.ProductImpl("Water", 0.99, 3);
-        VendingMachine.Product product2 = new VendingMachineGPT3.ProductImpl("Cookie", 2.50, 1);
-        VendingMachine.Product product3 = new VendingMachineGPT3.ProductImpl("Bubblegum", 1.99, 5);
+        VendingMachine.Product product1 = new VendingMachineGPT.ProductImpl("Water", 0.99, 3);
+        VendingMachine.Product product2 = new VendingMachineGPT.ProductImpl("Cookie", 2.50, 1);
+        VendingMachine.Product product3 = new VendingMachineGPT.ProductImpl("Bubblegum", 1.99, 5);
 
         baseProducts.add(product1);
         baseProducts.add(product2);
@@ -35,7 +35,7 @@ public class VendingMachineGPT3Tests {
 
     private List<VendingMachine.Product> getCakeProduct() {
         List<VendingMachine.Product> cakeList = new LinkedList();
-        VendingMachine.Product cake = new VendingMachineGPT3.ProductImpl("Cake", 3.99, 1);
+        VendingMachine.Product cake = new VendingMachineGPT.ProductImpl("Cake", 3.99, 1);
         cakeList.add(cake);
 
         return cakeList;

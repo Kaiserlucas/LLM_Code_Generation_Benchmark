@@ -1,14 +1,14 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.InvalidEncodingException;
 import tasks.CipherDecoder;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class CipherDecoderGPT3Tests {
+public class CipherDecoderGPTTests {
 
     public CipherDecoder getCipherDecoder() {
-        return new CipherDecoderGPT3();
+        return new CipherDecoderGPT();
     }
 
     @Test

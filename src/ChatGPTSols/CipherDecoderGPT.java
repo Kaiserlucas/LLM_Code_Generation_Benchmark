@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.InvalidEncodingException;
 import tasks.CipherDecoder;
@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CipherDecoderGPT3 implements CipherDecoder {
+public class CipherDecoderGPT implements CipherDecoder {
 
     @Override
     public String binaryToText(String input) throws InvalidEncodingException {

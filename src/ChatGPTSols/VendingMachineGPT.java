@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 import exceptions.InsufficientMoneyException;
 import exceptions.OutOfStockException;
@@ -6,17 +6,15 @@ import exceptions.ProductNotFoundException;
 import tasks.VendingMachine;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class VendingMachineGPT3 implements VendingMachine {
+public class VendingMachineGPT implements VendingMachine {
 
     private List<Product> productStock;
     private double activeBalance;
     private double inactiveBalance;
 
-    public VendingMachineGPT3() {
+    public VendingMachineGPT() {
         this.productStock = new ArrayList<>();
         this.activeBalance = 0;
         this.inactiveBalance = 0;

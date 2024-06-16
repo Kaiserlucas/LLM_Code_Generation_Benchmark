@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 
 import org.junit.Test;
@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class TextProcessorGPT3Tests {
+public class TextProcessorGPTTests {
 
     public TextProcessor getTextProcessor() {
-        return new TextProcessorGPT3();
+        return new TextProcessorGPT();
     }
 
     @Test

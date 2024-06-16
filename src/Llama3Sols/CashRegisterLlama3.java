@@ -82,10 +82,6 @@ public class CashRegisterLlama3 implements CashRegister {
             throw new UserPaidTooLittleException("Paid amount is less than purchase price");
         }
 
-        //Initial version of the code that would not compile
-        //addMoney(paidCoins);
-
-        //Fixed version
         for (Coin coin : paidCoins) {
             addMoney(coin);
         }

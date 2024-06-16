@@ -80,10 +80,6 @@ public class CashRegisterGemini implements CashRegister {
             throw new UserPaidTooLittleException("Paid amount is less than the purchase price.");
         }
 
-        //Initial version of the code that would not compile
-        //addMoney(paidCoins); // Add paid coins to cash register
-
-        //Fixed version
         for (Coin coin : paidCoins) {
             addMoney(coin);
         }

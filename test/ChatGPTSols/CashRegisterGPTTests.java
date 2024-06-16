@@ -1,4 +1,4 @@
-package GPT3Sols;
+package ChatGPTSols;
 
 
 import exceptions.NoMatchingCoinsException;
@@ -12,14 +12,14 @@ import tasks.CashRegister.Coin;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CashRegisterGPT3Tests {
+public class CashRegisterGPTTests {
 
     public CashRegister getCashRegister() {
-        return new CashRegisterGPT3();
+        return new CashRegisterGPT();
     }
 
     public Coin getCoin(int value) {
-        return new CashRegisterGPT3.CoinImpl(value);
+        return new CashRegisterGPT.CoinImpl(value);
     }
 
     public void addMoneyToRegister(CashRegister register, int value) {
